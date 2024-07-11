@@ -5,50 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Notifications page</title>
-  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/scss/styles.css">
 </head>
 <body>
 
-  <main>
-    <header>
-      <p>Notifications 3</p>
-      <p>Mark all as read</p>
+  <main class="container__main">
+    <header class="header">
+      <p class="header__title">Notifications 3</p>
+      <p class="header__read">Mark all as read</p>
     </header>
-    <ul>
-      <li>
-        Mark Webber reacted to your recent post My first tournament today!
-        1m ago
+    <ul class="main__notifications">
+      <li class="notifications__item">
+        <img src="./assets/images/avatar-mark-webber.webp" alt="">
+        <div>
+          <p>Mark Webber reacted to your recent post My first tournament today!</p>
+          <span>1m ago</span>
+        </div>
       </li>
-      <li>
-        Angela Gray followed you
-        5m ago
+      <li class="notifications__item">
+        <img src="./assets/images/avatar-angela-gray.webp" alt="">
+        <div>
+          <p>Angela Gray followed you</p>
+          <span>5m ago</span>
+        </div>
       </li>
-      <li>
-        Jacob Thompson has joined your group Chess Club
-        1 day ago
+      <li class="notifications__item">
+        <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+        <div>
+          <p>Jacob Thompson has joined your group Chess Club</p>
+          <span>1 day ago</span>
+        </div>
       </li>
-      <li>
-        Rizky Hasanuddin sent you a private message
-        5 days ago
+      <li class="notifications__item">
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+        <div>
+          <p>Rizky Hasanuddin sent you a private message</p>
+          <span>5 days ago</span>
+            <p>
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+              I'm already having lots of fun and improving my game.
+            </p>
+        </div>
       </li>
-      <li>
-        Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-        I'm already having lots of fun and improving my game.
+      <li class="notifications__item">
+        <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+        <div>
+          <p>Kimberly Smith commented on your picture</p>
+          <span>1 week ago</span>
+        </div>
       </li>
-      <li>
-        Kimberly Smith commented on your picture
-        1 week ago
+      <li class="notifications__item">
+        <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
+        <div>
+          <p>Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate</p>
+          <span>2 weeks ago</span>
+        </div>
       </li>
-      <li>
-        Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-        2 weeks ago
-      </li>
-      <li>
-        Anna Kim left the group Chess Club
-        2 weeks ago
+      <li class="notifications__item">
+        <img src="./assets/images/avatar-anna-kim.webp" alt="">
+        <div>
+          <p>Anna Kim left the group Chess Club</p>
+          <span>2 weeks ago</span>
+        </div>
       </li>
     </ul>
   </main>
-  
 </body>
 </html>

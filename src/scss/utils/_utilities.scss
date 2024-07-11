@@ -1,0 +1,51 @@
+// Media Query
+
+@mixin device($device) {
+  @if $device == tablet {
+    @media (min-width: 700px) {
+      @content;
+    }
+  }  
+  @else if $device == desktop {
+    @media (min-width: 75rem) {
+      @content;
+    }
+  }
+}
+
+// Colors
+$neutral-color-1: #151515;
+$neutral-color-2: #FFFFFF;
+$color1: #4EE1A0;
+$color2: #D9D9D9;
+$color3: #242424;
+$color4: #FF6F5B;
+
+
+
+//Typography
+$fonts: (
+  "$xsmall": 14px,
+  "$small": 18px,
+  "$medium1": 24px,
+  "$medium2": 32px,
+  "$medium3": 40px,
+  "$medium4": 48px,
+  "$large": 56px,
+  "$large2": 72px,
+  "$large3": 88px,
+);
+
+
+// Utility Classes
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

@@ -1,0 +1,81 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, fieldset {
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.container__main {
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+@media (min-width: 700px) {
+  .header {
+    margin-bottom: 31px;
+  }
+}
+
+.main__notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notifications__item {
+  background-color: #F7FAFD;
+  display: flex;
+  align-items: start;
+}
+.notifications__item img {
+  max-width: 39px;
+}/*# sourceMappingURL=styles.css.map */
