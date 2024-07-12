@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url(../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
-  font-weight: normal;
+  font-weight: 100 900;
   font-style: normal;
 }
 
@@ -40,6 +40,7 @@ button, fieldset {
 body {
   min-height: 100vh;
   background-color: #FFFFFF;
+  font-family: "Plus Jakarta Sans";
 }
 
 .container__main {
@@ -49,23 +50,97 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 24px;
   @include device(tablet) {
     margin-bottom: 31px;
   }
 }
 
+.header__title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1C202B;
+}
+
+.header__read {
+  color: #5E6778;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.title__number {
+  background-color: #0A327B;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 2px 11px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-left: 9px;
+}
+
+
 .main__notifications {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .notifications__item {
   background-color: #F7FAFD;
+  font-size: 14px;
   display: flex;
   align-items: start;
+  padding: 16px;
+  border-radius: 8px;
+  gap: 13px;
   img {
     max-width: 39px;
   }
 }
+
+.notification__text {
+  color: #5E6778;
+  font-weight: 500;
+  &::after {
+    display: inline-block;
+    content: '';
+    background: #E54;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: 6px;
+  }
+}
+
+.notification__user {
+  color: #1C202B;
+  font-weight: 800;
+}
+
+.notification__time {
+  color: #939CAD;
+  font-weight: 500;
+  
+}
+
+.notification__post {
+  color: #5E6778;
+  font-weight: 700;
+}
+
+.notification__group {
+  color: #0A327B;
+  font-weight: 700;
+}
+
+.notification__pvt-msg {
+  margin-top: 12px;
+  padding: 16px;
+  border: 1px solid #DDE7EE;
+  border-radius: 5px;
+  color: #5E6778;
+  font-weight: 500;
+}
+
+
