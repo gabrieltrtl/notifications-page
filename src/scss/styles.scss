@@ -39,14 +39,14 @@ button, fieldset {
 
 body {
   min-height: 100vh;
-  background-color: #FFFFFF;
+  background-color: $neutral-color-1;
   font-family: "Plus Jakarta Sans";
 }
 
 .container__main {
-  padding: 16px;
+  padding: 1rem;
   @include device(tablet) {
-    max-width: 730px;
+    max-width: 45.625rem;
     margin: 0 auto;
   }
 }
@@ -55,34 +55,34 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   @include device(tablet) {
-    margin-bottom: 31px;
+    margin-bottom: 1.9375rem;
   }
 }
 
 .header__title {
-  font-size: 20px;
+  font-size: map-get($fonts, "$large");
   font-weight: 800;
   color: #1C202B;
 }
 
 .header__read {
-  color: #5E6778;
-  font-size: 14px;
+  color: $color1;
+  font-size: map-get($fonts, "$small");
   font-weight: 500;
   background: none;
   cursor: pointer;
 }
 
 .title__number {
-  background-color: #0A327B;
-  font-size: 16px;
+  background-color: $color2;
+  font-size: map-get($fonts, "$medium");
   border-radius: 6px;
-  padding: 2px 11px;
+  padding: 0.125rem 0.6875rem;
   font-weight: 800;
-  color: #FFFFFF;
-  margin-left: 9px;
+  color: $neutral-color-1;
+  margin-left: 0.5625rem;
 }
 
 
@@ -93,21 +93,21 @@ body {
 }
 
 .notifications__item {
-  background-color: #F7FAFD;
-  font-size: 14px;
+  background-color: $neutral-color-2;
+  font-size: map-get($fonts, "$small");
   display: flex;
   align-items: start;
-  padding: 16px;
+  padding: 1rem;
   border-radius: 8px;
   gap: 13px;
   cursor: pointer;
   img {
-    max-width: 39px;
+    max-width: 2.4375rem;
   }
 }
 
 .notification__text {
-  color: #5E6778;
+  color: $color1;
   font-weight: 500;
   &::after {
     display: inline-block;
@@ -116,7 +116,7 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    margin-left: 6px;
+    margin-left: 0.375rem;
   }
 }
 
@@ -129,7 +129,7 @@ body {
   font-weight: 800;
   &:hover {
     cursor: pointer;
-    color: #0A327B;
+    color: $color2;
   }
 }
 
@@ -140,26 +140,26 @@ body {
 }
 
 .notification__post {
-  color: #5E6778;
+  color: $color1;;
   font-weight: 700;
   &:hover {
     cursor: pointer;
-    color: #0A327B;
+    color: $color2;
   }
 }
 
 .notification__group {
-  color: #0A327B;
+  color: $color2;
   font-weight: 700;
   cursor: pointer;
 }
 
 .notification__pvt-msg {
-  margin-top: 12px;
-  padding: 16px;
+  margin-top: 0.75rem;
+  padding: 1rem;
   border: 1px solid #DDE7EE;
   border-radius: 5px;
-  color: #5E6778;
+  color: $color1;;
   font-weight: 500;
   &:hover {
     background-color: #E5EFFA;

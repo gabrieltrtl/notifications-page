@@ -14,10 +14,10 @@
 }
 
 // Colors
-$neutral-color-1: #151515;
-$neutral-color-2: #FFFFFF;
-$color1: #4EE1A0;
-$color2: #D9D9D9;
+$neutral-color-1: #FFFFFF;
+$neutral-color-2: #F7FAFD;
+$color1: #5E6778;
+$color2: #0A327B;
 $color3: #242424;
 $color4: #FF6F5B;
 
@@ -25,15 +25,9 @@ $color4: #FF6F5B;
 
 //Typography
 $fonts: (
-  "$xsmall": 14px,
-  "$small": 18px,
-  "$medium1": 24px,
-  "$medium2": 32px,
-  "$medium3": 40px,
-  "$medium4": 48px,
-  "$large": 56px,
-  "$large2": 72px,
-  "$large3": 88px,
+  "$small": 0.875rem,
+  "$medium": 1rem,
+  "$large": 1.25rem,
 );
 
 
