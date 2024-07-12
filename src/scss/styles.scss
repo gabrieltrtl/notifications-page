@@ -45,6 +45,10 @@ body {
 
 .container__main {
   padding: 16px;
+  @include device(tablet) {
+    max-width: 730px;
+    margin: 0 auto;
+  }
 }
 
 .header {
@@ -67,6 +71,8 @@ body {
   color: #5E6778;
   font-size: 14px;
   font-weight: 500;
+  background: none;
+  cursor: pointer;
 }
 
 .title__number {
@@ -94,6 +100,7 @@ body {
   padding: 16px;
   border-radius: 8px;
   gap: 13px;
+  cursor: pointer;
   img {
     max-width: 39px;
   }
@@ -113,9 +120,17 @@ body {
   }
 }
 
+.notifications__item.read .notification__text::after {
+  display: none;
+}
+
 .notification__user {
   color: #1C202B;
   font-weight: 800;
+  &:hover {
+    cursor: pointer;
+    color: #0A327B;
+  }
 }
 
 .notification__time {
@@ -127,11 +142,16 @@ body {
 .notification__post {
   color: #5E6778;
   font-weight: 700;
+  &:hover {
+    cursor: pointer;
+    color: #0A327B;
+  }
 }
 
 .notification__group {
   color: #0A327B;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .notification__pvt-msg {
@@ -141,6 +161,9 @@ body {
   border-radius: 5px;
   color: #5E6778;
   font-weight: 500;
+  &:hover {
+    background-color: #E5EFFA;
+  }
 }
 
 

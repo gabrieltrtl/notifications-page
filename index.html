@@ -10,32 +10,32 @@
 <body>
   <main class="container__main">
     <header class="header">
-      <p class="header__title">Notifications <span class="title__number">3</span></p>
-      <p class="header__read">Mark all as read</p>
+      <p class="header__title">Notifications <span class="title__number"></span></p>
+      <button class="header__read">Mark all as read</button>
     </header>
     <ul class="main__notifications">
-      <li class="notifications__item">
+      <li class="notifications__item" data-read="false">
         <img src="./assets/images/avatar-mark-webber.webp" alt="">
         <div>
           <p class="notification__text"><span class="notification__user">Mark Webber</span> reacted to your recent post <span class="notification__post">My first tournament today!</span></p>
           <span class="notification__time">1m ago</span>
         </div>
       </li>
-      <li class="notifications__item">
+      <li class="notifications__item" data-read="false">
         <img src="./assets/images/avatar-angela-gray.webp" alt="">
         <div>
           <p class="notification__text"><span class="notification__user">Angela Gray</span> followed you</p>
           <span class="notification__time">5m ago</span>
         </div>
       </li>
-      <li class="notifications__item">
+      <li class="notifications__item" data-read="false">
         <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
         <div>
           <p class="notification__text"><span class="notification__user">Jacob Thompson </span>has joined your group <span class="notification__group">Chess Club</span></p>
           <span class="notification__time">1 day ago</span>
         </div>
       </li>
-      <li class="notifications__item">
+      <li class="notifications__item" data-read="false">
         <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
         <div>
           <p class="notification__text"><span class="notification__user">Rizky Hasanuddin</span> sent you a private message</p>
@@ -46,21 +46,22 @@
             </p>
         </div>
       </li>
-      <li class="notifications__item">
+      <li class="notifications__item" data-read="false">
         <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
         <div>
           <p class="notification__text"><span class="notification__user">Kimberly Smith</span> commented on your picture</p>
           <span class="notification__time">1 week ago</span>
         </div>
+        <img src="./assets/images/image-chess.webp" alt="">
       </li>
-      <li class="notifications__item">
+      <li class="notifications__item" data-read="false">
         <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
         <div>
           <p class="notification__text"><span class="notification__user">Nathan Peterson</span> reacted to your recent post <span class="notification__post">5 end-game strategies to increase your win rate</span></p>
           <span class="notification__time">2 weeks ago</span>
         </div>
       </li>
-      <li class="notifications__item">
+      <li class="notifications__item" data-read="false">
         <img src="./assets/images/avatar-anna-kim.webp" alt="">
         <div>
           <p class="notification__text"><span class="notification__user">Anna Kim </span>left the group <span class="notification__group">Chess Club</span></p>
@@ -69,5 +70,6 @@
       </li>
     </ul>
   </main>
+  <script src="./src/js/main.js"></script>
 </body>
 </html>
