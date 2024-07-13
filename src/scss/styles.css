@@ -49,6 +49,9 @@ body {
   min-height: 100vh;
   background-color: #FFFFFF;
   font-family: "Plus Jakarta Sans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container__main {
